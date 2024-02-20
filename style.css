@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: sans-serif;
+    transition: 0.2s ease-in-out;
+    user-select: none;
+
+}
+.align{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background:linear-gradient(rgba(0, 0, 0, 0.399), rgba(0, 0, 0, 0.385)), url(https://static.vecteezy.com/system/resources/thumbnails/020/284/013/original/abstract-bright-neon-purple-and-blue-energy-light-disco-lines-with-reflections-abstract-background-4k-60-fps-free-video.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 5vh;
+}
+
+.turn-container {
+    width: 170px;
+    height: 80px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+}
+
+.turn-container h3{
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.turn-container .turn-box{
+    border: 3px solid #faf8f8ac;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.turn-container .turn-box:nth-child(even){
+    border-radius: none; 
+}
+.bg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 85px;
+    height: 40px;
+    background-color: rgba(240, 55, 203, 0.916);
+    z-index: -1;
+}
+
+.main-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    height: 250px;
+    width: 250px;
+    margin: 30px auto;
+    border: 2px solid #f7f4f4ac;
+}
+.box{
+    border: 2px solid #fbf9f9ac;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.box:hover{
+    background-color: rgba(249, 38, 217, 0.916);
+}
+#play-again{
+    background-color: rgba(249, 38, 217, 0.916);
+    padding: 10px 25px;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: none;
+}
+
+#play-again:hover{
+    padding: 10px 40px;
+    background-color: #3db6f7d8;
+    color: #000;
+}
